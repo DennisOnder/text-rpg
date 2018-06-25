@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/rpgui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Text-based RPG</title>
+</head>
+
+<body>
+    <div class="rpgui-content header">
+        <h1>Text-based RPG</h1>
+    </div>
+
+    <div id="mainScreen" class="rpgui-content rpgui-container framed-golden-2 content">
+        <h1 id="screen-header" class="screen-text">Welcome!</h1>
+        <p class="screen-text">This is a text-based RPG made in JavaScript</p>
+        <input id="screen-input" type="text" placeholder="Enter your character name">
+        <div class="selector">
+            <select name="Class" id="class-select" class="rpgui-list" size="4">
+                <option value="0" selected="selected">Choose your class:</option>
+                <option value="Warrior">Warrior</option>
+                <option value="Mage">Mage</option>
+                <option value="Ranger">Ranger</option>
+            </select>
+        </div>
+        <button id="screen-button" class="rpgui-button">
+            <p>Create your character!</p>
+        </button>
+        <div id="confirm" style="visibility: hidden;">
+            <p class="screen-text" style="color: rgb(53, 202, 53)">Your character has been created!</p>
+        </div>
+        <div id="warning" style="visibility: hidden;">
+            <p class="screen-text" style="color: red;">
+                <span style="color: red; font-size: 1.25em; margin-right: 5px;">&times;</span>You didn't create your character!
+                <span style="color: red; font-size: 1.25em; margin-left: 5px;">&times;</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/rpgui.js"></script>
+    <script src="assets/js/character.js"></script>
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/enemies.js"></script>
+    <script src="assets/js/chapter1.js"></script>
+    
+</body>
+
+</html>
