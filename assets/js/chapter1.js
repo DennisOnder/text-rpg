@@ -156,7 +156,7 @@ function endChapterOne() {
     clear();
     mainScreen.innerHTML +=
         text + 'Thank you for playing!' + closeText +
-        text + 'Chapter Two is in the at the moment, so stay tuned for that!' + closeText +
+        text + 'Chapter Two is in the making at the moment, so stay tuned for that!' + closeText +
         buttonContinue + 'Back to menu' + closeButton;
     document.getElementById('optionContinue').addEventListener('click', function () {
         clear();
